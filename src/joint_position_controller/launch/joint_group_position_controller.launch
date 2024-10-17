@@ -5,6 +5,6 @@
   <arg name="load_gripper" default="false"/> 
   
   <rosparam command="load" file="$(find joint_position_controller)/config/joint_group_position_controller.yaml" subst_value="true" /> 
-  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen"  args="--stopped joint_group_posizion_controller"/> 
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen"  args="--stopped joint_group_position_controller"/> 
   
 </launch>
